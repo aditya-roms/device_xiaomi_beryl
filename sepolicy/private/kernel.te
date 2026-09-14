@@ -1,0 +1,2 @@
+# Allow kernel thread (krfcommd) to bind service
+allow kernel self:capability net_bind_service;

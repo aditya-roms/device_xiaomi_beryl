@@ -1,0 +1,8 @@
+allow system_app sysfs_zram:file r_file_perms;
+binder_call(system_app, wificond)
+
+dontaudit system_app {
+    system_suspend_control_service
+    system_suspend_control_internal_service
+    tracingproxy_service
+}:service_manager find;

@@ -1,0 +1,6 @@
+# Allow all app domains (RenderThread) to search GPU sysfs directory
+allow appdomain sysfs_gpu:dir search;
+
+# Allow apps (like Camera) to read camera persist props
+get_prop(appdomain, vendor_camera_persist_prop)
+

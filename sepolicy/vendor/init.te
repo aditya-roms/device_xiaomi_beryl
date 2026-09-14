@@ -1,0 +1,2 @@
+# Allow init to read device tree model
+allow init sysfs_device_tree_model:file r_file_perms;

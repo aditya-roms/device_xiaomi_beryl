@@ -1,1 +1,26 @@
 dontaudit untrusted_app ashmem_device:chr_file open;
+
+dontaudit vendor_init debugfs_tracing_instances:file create;
+dontaudit vendor_init { cache_file cache_recovery_file update_engine_log_data_file }:dir { getattr open read search };
+dontaudit vendor_init vendor_userdir_file:dir { write add_name remove_name };
+dontaudit vendor_init default_prop:file { getattr open read map };
+dontaudit vendor_init default_prop:property_service set;
+
+dontaudit {
+    mediaserver
+    surfaceflinger
+} vendor_default_prop:file { getattr open read map };
+
+dontaudit {
+    ccci_rpcd
+    mtk_hal_camera
+    rild
+    vpud_native
+} default_prop:file { getattr open read map };
+
+dontaudit vold persist_data_file:dir { ioctl open read };
+dontaudit lbs_hidl_service property_socket:sock_file write;
+dontaudit lbs_hidl_service servicemanager:binder call;
+dontaudit mtk_hal_camera ctl_start_prop:property_service set;
+dontaudit tee system_userdir_file:dir search;
+dontaudit nfc nfc_data_vendor_file:dir search;
