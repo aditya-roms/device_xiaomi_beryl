@@ -3,3 +3,13 @@ vendor.dolby.dms.IDms/default                                             u:obje
 
 # Fingerprint
 vendor.xiaomi.hardware.fx.tunnel.IMiFxTunnel/default                    u:object_r:vendor_hal_fingerprint_service_xiaomi:s0
+
+# Graphics Mapper
+mapper/powervr                                                          u:object_r:hal_graphics_mapper_service:s0
+
+# Media Codecs (Codec2)
+android.hardware.media.c2.IComponentStore/default9                      u:object_r:hal_codec2_service:s0
+
+# RIL (NTN)
+vendor.mediatek.hardware.mtkradioex.ntn.IMtkRadioExNtn/slot1            u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.ntn.IMtkRadioExNtn/slot2            u:object_r:hal_radio_service:s0

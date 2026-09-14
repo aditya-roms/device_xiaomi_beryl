@@ -5,5 +5,19 @@ set_prop(vendor_init, vendor_batterysecret_prop)
 set_prop(vendor_init, vendor_sensors_prop)
 
 set_prop(vendor_init, vendor_fingerprint_prop)
+set_prop(vendor_init, vendor_camera_prop)
+set_prop(vendor_init, vendor_mtk_soc_prop)
+set_prop(vendor_init, vendor_mtk_radio_prop)
+set_prop(vendor_init, audio_prop)
+set_prop(vendor_init, exported_system_prop)
 
 allow vendor_init miev_dev:chr_file getattr;
+allow vendor_init metis_device:chr_file getattr;
+allow vendor_init cache_file:file getattr;
+dontaudit vendor_init cache_file:dir { create relabelto setattr };
+dontaudit vendor_init cache_file:file relabelto;
+dontaudit vendor_init update_engine_log_data_file:dir relabelfrom;
+
+
+allow vendor_init unlabeled:dir { open read relabelfrom getattr };
+allow vendor_init unlabeled:file { relabelfrom getattr };

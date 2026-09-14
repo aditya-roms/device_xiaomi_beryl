@@ -5,27 +5,39 @@ vendor.audiomediatek. u:object_r:vendor_audioserver_prop:s0
 persist.vendor.accelerate.charge u:object_r:vendor_batterysecret_prop:s0
 
 # Camera
-persist.vendor.camera. u:object_r:vendor_camera_persist_prop:s0
-vendor.camera. u:object_r:vendor_camera_prop:s0
-persist.vendor.debug.isphidl.guard u:object_r:vendor_camera_debug_prop:s0
-vendor.camprovider.enable_hidden   u:object_r:vendor_camera_debug_prop:s0
+persist.vendor.camera.                   u:object_r:vendor_camera_persist_prop:s0
+vendor.camera.                           u:object_r:vendor_camera_prop:s0
+persist.vendor.debug.isphidl.guard       u:object_r:vendor_camera_debug_prop:s0
+vendor.camprovider.enable_hidden         u:object_r:vendor_camera_debug_prop:s0
+persist.camera.dualcal.state             u:object_r:vendor_camera_persist_prop:s0
+vendor.debug.af.                         u:object_r:vendor_camera_debug_prop:s0
+
+# ConsumerIR
+ro.vendor.lirc.dev                       u:object_r:vendor_ir_prop:s0
 
 # Fingerprint
-persist.vendor.goodix. u:object_r:vendor_fingerprint_prop:s0
-persist.vendor.sys.fp. u:object_r:vendor_fingerprint_prop:s0
-ro.hardware.fp. u:object_r:vendor_fingerprint_prop:s0
-vendor.fps_hal. u:object_r:vendor_fingerprint_prop:s0
-vendor.anc.fingerprint.package.version u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.goodix.                   u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.sys.fp.                   u:object_r:vendor_fingerprint_prop:s0
+ro.hardware.fp.                          u:object_r:vendor_fingerprint_prop:s0
+vendor.fps_hal.                          u:object_r:vendor_fingerprint_prop:s0
+vendor.anc.fingerprint.package.version   u:object_r:vendor_fingerprint_prop:s0
+
+# NVRAM
+vendor.service.nvram_first_restore       u:object_r:vendor_mtk_service_nvram_restore_prop:s0
+vendor.service.connxo_nvram.             u:object_r:vendor_mtk_service_nvram_restore_prop:s0
 
 # RIL
 ro.vendor.oem.sno                        u:object_r:vendor_mtk_radio_prop:s0
 ro.vendor.oem.psno                       u:object_r:vendor_mtk_radio_prop:s0
 ro.vendor.oem.imei                       u:object_r:vendor_mtk_radio_prop:s0
 ro.vendor.oem.meid                       u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.mtk_data_config                u:object_r:vendor_mtk_radio_prop:s0
+ro.telephony.sim.count                   u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.radio.max.multisim             u:object_r:vendor_mtk_radio_prop:s0
 
 # Sensors
 ro.vendor.sensors.xiaomi.		 u:object_r:vendor_sensors_prop:s0
-ro.vendor.lirc.dev    u:object_r:vendor_ir_prop:s0
 
 # Thermal
 vendor.sys.thermal.data.path             u:object_r:vendor_thermal_prop:s0
+
