@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2023-2024 Paranoid Android
- * Copyright (C) 2024-2026 Halcyon Project
+ * Copyright (C) 2024-2026 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
