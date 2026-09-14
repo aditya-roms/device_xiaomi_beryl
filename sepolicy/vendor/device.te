@@ -1,2 +1,5 @@
 type touchfeature_device, dev_type;
 type consumerir_device, dev_type;
+type mitee_client_device, dev_type;
+type metis_device, dev_type;
+
