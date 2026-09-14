@@ -1,0 +1,12 @@
+# Allow init to create socket files declared in init .rc scripts
+allow init socket_device:sock_file { create setattr unlink };
+
+# Silence debugfs boot receiver tracing denials
+dontaudit init debugfs_bootreceiver_tracing:dir { add_name write };
+
+# Allow init to read block devices during early mount
+allow init tmpfs:blk_file { ioctl open read };
+allowxperm init tmpfs:blk_file ioctl 0x1272;
+
+# Silence early fsck block device denials
+dontaudit fsck block_device:blk_file rw_file_perms;

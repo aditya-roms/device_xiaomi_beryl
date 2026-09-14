@@ -86,13 +86,22 @@ genfscon sysfs /devices/platform/11db1000.i2c/i2c-6/6-006d/power_supply/nu2115-s
 # Fingerprint
 genfscon sysfs /devices/virtual/touch/touch_dev/fod_press_status u:object_r:vendor_fingerprint_sysfs:s0
 
+# GPU
+genfscon sysfs /devices/platform/soc/13000000.rgx u:object_r:sysfs_gpu:s0
+
 # Power
 genfscon proc /tp_gesture u:object_r:proc_touchpanel:s0
+genfscon proc /tp_lockdown_info u:object_r:proc_touchpanel:s0
+
+# Trusted Execution Environment (TEE)
+genfscon proc /mitee_log u:object_r:proc_mitee_log:s0
+
 
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
 genfscon sysfs /devices/platform/11b20000.i2c/i2c-5/5-0034/11b20000.i2c:mt6375@34:adc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11b20000.i2c/i2c-5/5-0034/11b20000.i2c:mt6375@34:auxadc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11b20000.i2c/i2c-5/5-0034/11b20000.i2c:mt6375@34:chg/power_supply/11b20000.i2c:mt6375@34:chg/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11b20000.i2c/i2c-5/5-0034/11b20000.i2c:mt6375@34:mtk-gauge/power_supply/mt6375-gauge/wakeup30 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11b20000.i2c/i2c-5/5-0034/11b20000.i2c:mt6375@34:mtk_gauge/power_supply/battery/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11b20000.i2c/i2c-5/5-0034/11b20000.i2c:mt6375@34:tcpc/tcpc/type_c_port0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11b20000.i2c/i2c-5/5-0034/11b20000.i2c:mt6375@34:tcpc/wakeup u:object_r:sysfs_wakeup:s0
@@ -100,6 +109,7 @@ genfscon sysfs /devices/platform/11b20000.i2c/i2c-5/5-0034/wakeup u:object_r:sys
 genfscon sysfs /devices/platform/11db0000.i2c/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11db1000.i2c/i2c-6/6-006d/power_supply/nu2115-standalone/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/charger/power_supply/bms/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/usb/wakeup38 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-04/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-05/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-09/mt6685-rtc/rtc/rtc0/alarmtimer.1.auto/wakeup u:object_r:sysfs_wakeup:s0

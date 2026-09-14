@@ -1,0 +1,2 @@
+# Allow modprobe in init_insmod_sh to write keys
+allow init_insmod_sh self:key write;

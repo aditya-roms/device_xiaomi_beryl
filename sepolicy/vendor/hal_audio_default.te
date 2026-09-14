@@ -2,6 +2,7 @@ allow hal_audio_default audio_socket:sock_file rw_file_perms;
 allow hal_audio_default sysfs_audio_pa:dir search;
 allow hal_audio_default sysfs_audio_pa:file r_file_perms;
 allow hal_audio_default sysfs_headset:file r_file_perms;
+allow hal_audio_default miev_dev:chr_file rw_file_perms;
 
 allow hal_audio_default persist_data_file:dir search;
 allow hal_audio_default sysfs_batteryinfo:dir r_dir_perms;
