@@ -55,7 +55,6 @@ vendor.mtk.camera.app.fd.video=1
 # Connsys
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
-persist.vendor.connsys.fm_chipid=mt6631_6635
 persist.vendor.connsys.patch.version=-1
 ro.vendor.connsys.dedicated.log=1
 ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
@@ -78,9 +77,6 @@ persist.vendor.sys.fp.expolevel=0x8
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=540|2110|105
 ro.vendor.sensors.xiaomi.udfps=true
-
-# FM
-ro.vendor.fm.platform=mt6631_6635
 
 # FUSE
 persist.sys.fuse.passthrough.enable=true
