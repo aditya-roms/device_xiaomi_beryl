@@ -148,6 +148,9 @@ ro.vendor.mtk_mvpu_security_support=0
 # Netflix
 ro.netflix.bsp_rev=MTK6855-35905-1
 
+# FM Radio
+ro.vendor.fm.platform=mt6631_6635
+
 # Neural networks
 ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
 ro.vendor.mtk_nn_quant_preferred=1
