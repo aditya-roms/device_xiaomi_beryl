@@ -7,6 +7,9 @@
 DEVICE_PATH := device/xiaomi/beryl
 KERNEL_PATH := device/xiaomi/beryl-kernel
 
+# LineageOS / crDroid build flag fallback
+LINEAGE_BUILD ?= beryl
+
 # Board Info
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
