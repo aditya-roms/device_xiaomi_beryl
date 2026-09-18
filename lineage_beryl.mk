@@ -26,3 +26,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="missi-user 16 BP2A.250605.031.A3 OS3.0.1.0.WOQMIXM release-keys" \
     BuildFingerprint=Redmi/beryl/beryl:16/BP2A.250605.031.A3/OS3.0.1.0.WOQMIXM:user/release-keys
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+
+#Mistify
+# Set maintainer
+MISTOS_MAINTAINER := Aditya
+
+# Enable GMS
+WITH_GMS := true
+
+# Enable UI enhancements
+TARGET_ENABLE_BLUR := true
+
+# Enable features
+TARGET_SUPPORTS_QUICK_TAP := true
