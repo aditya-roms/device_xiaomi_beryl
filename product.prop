@@ -26,3 +26,13 @@ ro.fm.fake_chan_2=10400 -152
 ro.fm.fake_chan_3=10750 -205
 
 import /product/product.${ro.boot.hardware.sku}.prop
+
+# MistOS
+ro.mist.display=1080 x 2400, 120 hz
+ro.mist.battery=5110mah
+ro.mist.soc=MediaTek Dimensity 7025-Ultra
+ro.mist.camera=108MP + 8MP + 2MP
+ro.mist.front=20MP
+ro.mist.platform=MT6855
+ro.mist.screen=6.75' AMOLED
+ro.mist.device.name=Redmi Note 14 5G/POCO M7 Pro
