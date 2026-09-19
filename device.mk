@@ -6,11 +6,9 @@
 
 DEVICE_PATH := device/xiaomi/beryl
 
-# Exclude repos from bp scanning
+# Exclude repos from bp scanning to prevent duplicate module definitions with hardware/lineage/compat
 PRODUCT_SOURCE_ROOT_DIRS += -kernel/platform
 PRODUCT_SOURCE_ROOT_DIRS += -prebuilts/misc/protobuf_vendorcompat
-PRODUCT_SOURCE_ROOT_DIRS += -hardware/qcom
-PRODUCT_SOURCE_ROOT_DIRS += -hardware/qcom-caf
 
 PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
 
