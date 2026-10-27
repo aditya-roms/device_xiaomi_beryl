@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_beryl.mk
+    $(LOCAL_DIR)/lineage_beryl.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_beryl-user \
+    lineage_beryl-userdebug \
+    lineage_beryl-eng
