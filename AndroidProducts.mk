@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_beryl.mk
+    $(LOCAL_DIR)/infinity_beryl.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_beryl-user \
-    lineage_beryl-userdebug \
-    lineage_beryl-eng
+    infinity_beryl-user \
+    infinity_beryl-userdebug \
+    infinity_beryl-eng

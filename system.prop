@@ -66,3 +66,9 @@ ro.property_service.async_persist_writes=true
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
+
+
+# Infinity-X
+ro.product.marketname=Redmi Note 14 5G
+ro.infinity.soc=Dimensity 7025 Ultra
+ro.infinity.camera=50MP + 2MP
