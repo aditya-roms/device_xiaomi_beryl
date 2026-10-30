@@ -41,5 +41,5 @@ WITH_GMS := true
 # Enable UI enhancements
 TARGET_ENABLE_BLUR := true
 
-# Enable features
-TARGET_SUPPORTS_QUICK_TAP := true
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := true

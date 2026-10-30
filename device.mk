@@ -427,3 +427,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/beryl/beryl-vendor.mk)
+
+# Privapp permissions logging (prevents bootloop on missing allowlist items)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=log

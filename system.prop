@@ -66,3 +66,6 @@ ro.property_service.async_persist_writes=true
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
+
+# Market name for USB Gadget descriptor
+ro.product.marketname=Redmi Note 14 5G
