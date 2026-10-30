@@ -95,7 +95,6 @@ genfscon proc /tp_gesture u:object_r:proc_touchpanel:s0
 genfscon proc /tp_lockdown_info u:object_r:proc_touchpanel:s0
 
 # Trusted Execution Environment (TEE)
-genfscon proc /mitee_log u:object_r:proc_mitee_log:s0
 
 
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
