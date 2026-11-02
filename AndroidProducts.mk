@@ -5,4 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_beryl.mk
+    $(LOCAL_DIR)/lineage_beryl.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_beryl-user \
+    lineage_beryl-userdebug
