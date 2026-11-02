@@ -177,7 +177,7 @@ PRODUCT_COPY_FILES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
-    FMTuner \
+    RevampedFMRadio \
     libmtkfmjni
 
 # Health
