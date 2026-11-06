@@ -8,5 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_beryl.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_beryl-bp4a-user \
-    lineage_beryl-bp4a-userdebug
+    lineage_beryl-user \
+    lineage_beryl-userdebug \
+    lineage_beryl-eng
