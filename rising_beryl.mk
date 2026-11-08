@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2025 The LineageOS Project
+# Copyright (C) 2026 RisingOS-Revived
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -15,7 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/beryl/device.mk)
 
 PRODUCT_DEVICE := beryl
-PRODUCT_NAME := lineage_beryl
+PRODUCT_NAME := rising_beryl
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 14 5G
 PRODUCT_MANUFACTURER := Xiaomi
@@ -30,4 +31,21 @@ PRODUCT_MANUFACTURER_FOR_ATTESTATION := $(PRODUCT_MANUFACTURER)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="missi-user 16 BP2A.250605.031.A3 OS3.0.1.0.WOQMIXM release-keys" \
-    BuildFingerprint=Redmi/beryl/beryl:16/BP2A.250605.031.A3/OS3.0.1.0.WOQMIXM:user/release-keys
+    BuildFingerprint=Redmi/beryl/beryl:16/BP2A.250605.031.A3/OS3.0.1.0.WOQMIXM:user/release-keys \
+    RisingChipset="Dimensity 7025 Ultra" \
+    RisingMaintainer="Aditya"
+
+# RisingOS Flags
+RISING_MAINTAINER := Aditya
+RISING_CHIPSET := Dimensity 7025 Ultra
+
+# UI & Display Flags
+TARGET_ENABLE_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_HAS_UDFPS := true
+
+# Camera
+PRODUCT_NO_CAMERA := false
+
+# GMS
+WITH_GMS := true

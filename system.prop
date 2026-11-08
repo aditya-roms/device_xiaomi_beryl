@@ -67,3 +67,9 @@ ro.property_service.async_persist_writes=true
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
+
+# RisingOS
+ro.product.marketname=Redmi Note 14 5G
+ro.rising.maintainer=Aditya
+ro.rising.chipset=Dimensity 7025 Ultra
+
