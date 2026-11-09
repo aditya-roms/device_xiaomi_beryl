@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_beryl.mk
+    $(LOCAL_DIR)/lineage_beryl.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_beryl-user \
-    rising_beryl-userdebug \
-    rising_beryl-eng
+    lineage_beryl-user \
+    lineage_beryl-userdebug \
+    lineage_beryl-eng

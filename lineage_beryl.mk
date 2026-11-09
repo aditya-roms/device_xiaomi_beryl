@@ -16,7 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/beryl/device.mk)
 
 PRODUCT_DEVICE := beryl
-PRODUCT_NAME := rising_beryl
+PRODUCT_NAME := lineage_beryl
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 14 5G
 PRODUCT_MANUFACTURER := Xiaomi
