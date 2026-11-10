@@ -48,4 +48,4 @@ TARGET_HAS_UDFPS := true
 PRODUCT_NO_CAMERA := false
 
 # GMS
-WITH_GMS := true
+WITH_GMS ?= false
