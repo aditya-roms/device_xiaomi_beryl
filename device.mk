@@ -122,8 +122,7 @@ PRODUCT_PACKAGES += \
 
 # Dolby
 PRODUCT_PACKAGES += \
-    XiaomiDolby \
-    DSPVolumeSynchronizer
+    XiaomiDolby
 
 PRODUCT_PACKAGES += \
     MtkInCallService \
