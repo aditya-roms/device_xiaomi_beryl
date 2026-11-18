@@ -67,3 +67,8 @@ ro.property_service.async_persist_writes=true
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
+
+# Resurrection Remix
+ro.product.marketname=Redmi Note 14 5G
+ro.rr.maintainer=Aditya
+
