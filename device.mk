@@ -434,3 +434,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/beryl/beryl-vendor.mk)
+
+# Beryl Extras
+$(call inherit-product-if-exists, vendor/beryl-extras/beryl-extras.mk)
+
