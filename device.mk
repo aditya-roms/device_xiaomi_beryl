@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/xiaomi/beryl
 
+# Exclude protobuf_vendorcompat from bp scanning to prevent duplicate module definitions with hardware/lineage/compat
+PRODUCT_SOURCE_ROOT_DIRS += -prebuilts/misc/protobuf_vendorcompat
+
 PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
 
 # Enforce generic ramdisk allow list
